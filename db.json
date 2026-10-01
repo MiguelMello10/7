@@ -1,0 +1,40 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Refrigerante Cola 2L",
+      "preco": 9.5,
+      "categoria": "Bebidas",
+      "estoque": 40
+    },
+    {
+      "id": "2",
+      "nome": "Suco de Laranja 1L",
+      "preco": 6,
+      "categoria": "Bebidas",
+      "estoque": 25
+    },
+    {
+      "id": "3",
+      "nome": "Arroz Branco 5kg",
+      "preco": 24.9,
+      "categoria": "Alimentos",
+      "estoque": 30
+    },
+    {
+      "id": "4",
+      "nome": "Sabonete em Barra",
+      "preco": 2.5,
+      "categoria": "Higiene",
+      "estoque": 100
+    },
+    {
+      "id": "5",
+      "nome": "Desinfetante 500ml",
+      "preco": 7.8,
+      "categoria": "Limpeza",
+      "estoque": 15
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

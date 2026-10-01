@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Mercado</title>
+    <!-- Linkando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. Cadastrar Novo Produto (POST) -->
+        <h2>Cadastrar Novo Produto</h2>
+        <form id="produtoForm">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required placeholder="Ex: Refrigerante Lata">
+            </div>
+            <div>
+                <label for="preco">Preço (R$):</label>
+                <input type="number" step="0.01" id="preco" required placeholder="0.00">
+            </div>
+            <div>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" required>
+                    <option value="">Selecione...</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Alimentos">Alimentos</option>
+                    <option value="Higiene">Higiene</option>
+                    <option value="Limpeza">Limpeza</option>
+                </select>
+            </div>
+            <div>
+                <label for="estoque">Estoque:</label>
+                <input type="number" id="estoque" required placeholder="0">
+            </div>
+            <button type="submit">Adicionar produto</button>
+        </form>
+
+        <hr>
+
+        <!-- 2. Consultar Bebidas (GET) e Exclusão (DELETE) -->
+        <h2>Consultar Bebidas</h2>
+        <button class="btn-listar" id="btnListarBebidas">Listar Bebidas</button>
+        <div id="listaBebidas"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
